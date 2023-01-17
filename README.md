@@ -73,9 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://reactjs.org/"><img alt="React badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=61dafb&logo=React&label=Framework&message=React&color=61dafb"></a>
   <a href= "https://reactnative.dev/"><img alt="React Native badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=61dafb&logo=React&label=Framework&message=React Native&color=61dafb"></a>
   <a href= "https://expo.dev/"><img alt="Expo badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000020&logo=Expo&label=React tool&message=Expo&color=000020"></a>
-  <a href= "https://nextjs.org/"><img alt="Next.js badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Next.js&label=Framework&message=Next.js&color=000000"></a>
   <a href= "https://www.fastify.io/"><img alt="Fastify badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Fastify&label=Framework&message=Fastify&color=000000"></a>
-  <a href= "https://axios-http.com/"><img alt="Axios badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=5a29e4&logo=Axios&label=HTTP Client&message=Axios&color=5a29e4"></a>
   <a href= "https://www.prisma.io/"><img alt="Prisma badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=2d3748&logo=Prisma&label=ORM&message=Prisma&color=2d3748"></a>
   <a href= "https://www.sqlite.org/index.html"><img alt="SQLite badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=003b57&logo=SQLite&label=Database&message=SQLite&color=003b57"></a>
   <a href= "https://www.figma.com/file/QQXvJRUjgkMA1gHHh63rFw/Habits-(i)-(Community)?t=ZIPBAGYzdRufIN0g-0"><img alt="link projeto no figma" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F24E1E&logo=Figma&label=Designer&message=Figma&color=F24E1E"></a>
