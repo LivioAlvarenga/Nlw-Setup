@@ -4,6 +4,7 @@ import { z } from "zod";
 import { prisma } from "./lib/prisma";
 
 export async function appRoutes(app: FastifyInstance) {
+  // Rota Criação de novo hábito
   app.post("/habits", async (request) => {
     const createHabitBody = z.object({
       title: z.string(),
@@ -32,6 +33,7 @@ export async function appRoutes(app: FastifyInstance) {
     });
   });
 
+  // Rota Detalhe de dia (hábitos completos / possíveis)
   app.get("/day", async (request) => {
     const getDayParams = z.object({
       date: z.coerce.date(),
@@ -73,4 +75,8 @@ export async function appRoutes(app: FastifyInstance) {
       completedHabits,
     };
   });
+
+  // Rota toggle de hábito no dia
+
+  // Rota resumo de dias
 }
