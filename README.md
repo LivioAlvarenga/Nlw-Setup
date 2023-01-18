@@ -257,6 +257,9 @@ npm run db
 npx prisma generate
 # ou
 npm run diagrama
+
+# Criando Seed, lançamentos de dados para testes
+npx prisma db seed
 ```
 
 ### Running the app mobile
