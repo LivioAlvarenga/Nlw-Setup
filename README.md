@@ -136,6 +136,17 @@ npm i prisma -D
 npm i @prisma/client
 ```
 
+Instalando gerador de diagrama para DB Prisma
+
+```bash
+npm i -D prisma-erd-generator @mermaid-js/mermaid-cli
+
+# adicionar o código abaixo em schema.prisma
+generator erd {
+  provider = "prisma-erd-generator"
+}
+```
+
 ### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss
 
 Cria um projeto com ViteJs
@@ -241,6 +252,11 @@ npx prisma studio -b firefox -p 5173
 # -p 5173 p/ especificar porta
 # ou
 npm run db
+
+# Gerando diagrama de banco de dados Prisma
+npx prisma generate
+# ou
+npm run diagrama
 ```
 
 ### Running the app mobile
