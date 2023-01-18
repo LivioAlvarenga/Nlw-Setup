@@ -213,6 +213,11 @@ Instalando biblioteca de ícones Phosphor
 npm install phosphor-react
 ```
 
+Instalando faker para gerar números aleatórios
+```bash
+npm install --save-dev @faker-js/faker
+```
+
 ### MOBILE | React Native - Expo - TypeScript
 
 Instalando expo-cli globalmente
