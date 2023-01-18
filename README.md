@@ -89,7 +89,7 @@ As seguintes ferramentas foram usadas na construção do projeto
 
 ## ⚙️ Instalações
 
-### BACK-END | TypeScript - TSX - Fastify - Prisma
+### BACK-END | TypeScript - TSX - Fastify - Prisma - Zod
 
 Criar pasta server dentro do projeto
 
@@ -120,6 +120,13 @@ Instalar TSX na dependência de desenvolvimento
 npm i tsx -D
 ```
 
+Instalar Zod na dependência de produção
+
+```bash
+# biblioteca de validação e tipagem TypeScript (https://zod.dev)
+npm install zod
+```
+
 Instalar Fastify na dependência de produção | Cria rotas HTTP
 
 ```bash
@@ -145,6 +152,13 @@ npm i -D prisma-erd-generator @mermaid-js/mermaid-cli
 generator erd {
   provider = "prisma-erd-generator"
 }
+```
+
+Instalar Dayjs na dependência de produção
+
+```bash
+# biblioteca de manipulação de datas
+npm install dayjs
 ```
 
 ### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss
