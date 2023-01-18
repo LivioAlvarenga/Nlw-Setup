@@ -337,6 +337,19 @@ module.exports = (() => {
 })();
 ```
 
+Criando types para svg
+
+```ts
+// crie um arquivo em uma pasta @types/svg.d.ts em src
+// adicione no svg.d.ts o script abaixo
+declare module "*.svg" {
+  import React from "react";
+  import { SvgProps } from "react-native-svg";
+  const content: React.FC<SvgProps>;
+  export default content;
+}
+```
+
 ---
 
 &nbsp;
