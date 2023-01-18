@@ -1,7 +1,12 @@
+import Header from "./components/Header";
 import "./styles/global.css";
 
-function App() {
-  return <h1 className="bg-slate-500 text-5xl">Hello Word</h1>;
+export function App() {
+  return (
+    <div className="flex h-screen w-screen items-center justify-center">
+      <div className="flex w-full max-w-5xl flex-col gap-16 px-6">
+        <Header />
+      </div>
+    </div>
+  );
 }
-
-export default App;
