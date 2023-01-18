@@ -37,6 +37,7 @@ export function Home() {
           {amountOfDaysToFill > 0 &&
             Array.from({ length: amountOfDaysToFill }).map(() => (
               <View
+                key={faker.datatype.uuid()}
                 className="m-1 rounded-lg border-2 border-zinc-800 bg-zinc-900 opacity-40"
                 style={{ width: DAY_SIZE, height: DAY_SIZE }}
               />
