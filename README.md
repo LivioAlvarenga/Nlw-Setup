@@ -207,6 +207,12 @@ Adicionando configuração Tailwindcss em src/styles/global.css
 @tailwind utilities
 ```
 
+Instalando biblioteca de ícones Phosphor
+
+```bash
+npm install phosphor-react
+```
+
 ### MOBILE | React Native - Expo - TypeScript
 
 Instalando expo-cli globalmente
