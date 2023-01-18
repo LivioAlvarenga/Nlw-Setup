@@ -356,6 +356,13 @@ Instalando faker para gerar números aleatórios
 npm install @faker-js/faker
 ```
 
+Instalar Dayjs na dependência de produção
+
+```bash
+# biblioteca de manipulação de datas
+npm install dayjs
+```
+
 ---
 
 &nbsp;
