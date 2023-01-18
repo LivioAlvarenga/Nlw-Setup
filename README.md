@@ -186,7 +186,7 @@ Criando tailwind.config.cjs
 npx tailwindcss init -p
 ```
 
-Editando npx tailwind.config.cjs
+Editando tailwind.config.cjs
 
 ```bash
 /** @type {import('tailwindcss').Config} */
@@ -248,6 +248,52 @@ Instalando expo-font e font Inter do Google
 
 ```bash
 npx expo install expo-font @expo-google-fonts/inter
+```
+
+Instalando NativeWind no ambiente de produção (Tailwindcss em React-native)
+
+```bash
+npm install nativewind
+```
+
+Instalando arquitetura Tailwindcss
+
+```bash
+npm install -D tailwindcss prettier prettier-plugin-tailwindcss
+
+# Criar arquivo .prettierrc.json na raiz do projeto
+```
+
+Criando tailwind.config.cjs
+
+```bash
+npx tailwindcss init
+```
+
+Editando tailwind.config.cjs
+
+```bash
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Editando babel.config.js
+
+```bash
+// babel.config.js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: ["nativewind/babel"], // <=====
+  };
+};
 ```
 
 ---
