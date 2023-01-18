@@ -296,6 +296,14 @@ module.exports = function (api) {
 };
 ```
 
+Criando types para className
+
+```ts
+// crie um arquivo em uma pasta @types/app.d.ts em src
+// adicione no app.d.ts o script abaixo
+/// <reference types="nativewind/types" />
+```
+
 ---
 
 &nbsp;
