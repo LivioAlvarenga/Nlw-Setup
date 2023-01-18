@@ -216,7 +216,7 @@ npm install phosphor-react
 Instalando faker para gerar números aleatórios
 
 ```bash
-npm install --save-dev @faker-js/faker
+npm install @faker-js/faker
 ```
 
 Instalar Dayjs na dependência de produção
@@ -348,6 +348,12 @@ declare module "*.svg" {
   const content: React.FC<SvgProps>;
   export default content;
 }
+```
+
+Instalando faker para gerar números aleatórios
+
+```bash
+npm install @faker-js/faker
 ```
 
 ---
