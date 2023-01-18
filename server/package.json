@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "db": "npx prisma studio -b firefox -p 5173"
   },
   "keywords": [],
   "author": "Livio Alvarenga",

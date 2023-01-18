@@ -239,6 +239,8 @@ npx prisma studio
 npx prisma studio -b firefox -p 5173
 # -b firefox p/ especificar navegador
 # -p 5173 p/ especificar porta
+# ou
+npm run db
 ```
 
 ### Running the app mobile
