@@ -161,7 +161,7 @@ Instalar Dayjs na dependência de produção
 npm install dayjs
 ```
 
-### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss
+### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss - Radix
 
 Cria um projeto com ViteJs
 
@@ -224,6 +224,12 @@ Instalar Dayjs na dependência de produção
 ```bash
 # biblioteca de manipulação de datas
 npm install dayjs
+```
+
+Instalar componente dialog do Radix
+
+```bash
+npm install @radix-ui/react-dialog
 ```
 
 ### MOBILE | React Native - Expo - TypeScript
