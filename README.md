@@ -226,10 +226,11 @@ Instalar Dayjs na dependência de produção
 npm install dayjs
 ```
 
-Instalar componente dialog do Radix
+Instalar componentes do Radix
 
 ```bash
 npm install @radix-ui/react-dialog
+npm install @radix-ui/react-popover
 ```
 
 ### MOBILE | React Native - Expo - TypeScript
