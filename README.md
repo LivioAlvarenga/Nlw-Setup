@@ -263,6 +263,14 @@ Instalando expo-font e font Inter do Google
 npx expo install expo-font @expo-google-fonts/inter
 ```
 
+Instalando biblioteca de navegação entre telas react-navigation
+
+```bash
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack
+```
+
 Instalando NativeWind no ambiente de produção (Tailwindcss em React-native)
 
 ```bash
