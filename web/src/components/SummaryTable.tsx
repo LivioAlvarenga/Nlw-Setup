@@ -27,7 +27,7 @@ export default function SummaryTable() {
 
       <div className="grid grid-flow-col grid-rows-7 gap-3">
         {summaryDates.map((date) => {
-          return <HabitDay key={faker.datatype.uuid()} />;
+          return <HabitDay key={faker.datatype.uuid()} amount={5} completed={4} />;
         })}
 
         {amountOfDaysToFill > 0 &&
