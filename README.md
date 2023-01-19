@@ -233,6 +233,12 @@ npm install @radix-ui/react-dialog
 npm install @radix-ui/react-popover
 ```
 
+Instalar CLSX para criar condicionais em className
+
+```bash
+npm install clsx
+```
+
 ### MOBILE | React Native - Expo - TypeScript
 
 Instalando expo-cli globalmente
