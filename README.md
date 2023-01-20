@@ -66,7 +66,6 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://html5.org/"><img alt="html 5 badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=E34F26&logo=HTML5&label=Markup Language&message=HTML5&color=E34F26"></a>
   <a href= "https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img alt="CSS 3 badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=1572B6&logo=CSS3&label=Style&message=CSS3&color=1572B6"></a>
   <a href= "https://tailwindcss.com/"><img alt="Tailwind CSS badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=06b6d4&logo=Tailwind CSS&label=Style&message=Tailwind CSS&color=06b6d4"></a>
-  <a href= "https://postcss.org/"><img alt="PostCSS CSS badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=dd340a&logo=PostCSS&label=Style&message=PostCSS&color=dd340a"></a>
   <a href= "https://www.javascript.com/"><img alt="JavaScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7DF1E&logo=JavaScript&label=Language&message=JavaScript&color=F7DF1E"></a>
   <a href= "https://www.typescriptlang.org/"><img alt="TypeScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=3178c6&logo=TypeScript&label=Language&message=TypeScript&color=3178c6"></a>
   <a href= "https://nodejs.org/en/"><img alt="Node.js badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=339933&logo=Node.js&label=Runtime Environment&message=Node.js&color=3139933"></a>
@@ -74,6 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://reactnative.dev/"><img alt="React Native badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=61dafb&logo=React&label=Framework&message=React Native&color=61dafb"></a>
   <a href= "https://expo.dev/"><img alt="Expo badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000020&logo=Expo&label=React tool&message=Expo&color=000020"></a>
   <a href= "https://www.fastify.io/"><img alt="Fastify badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Fastify&label=Framework&message=Fastify&color=000000"></a>
+  <a href= "https://axios-http.com/"><img alt="Axios badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=5a29e4&logo=Axios&label=HTTP Client&message=Axios&color=5a29e4"></a>
   <a href= "https://www.prisma.io/"><img alt="Prisma badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=2d3748&logo=Prisma&label=ORM&message=Prisma&color=2d3748"></a>
   <a href= "https://www.sqlite.org/index.html"><img alt="SQLite badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=003b57&logo=SQLite&label=Database&message=SQLite&color=003b57"></a>
   <a href= "https://www.figma.com/file/QQXvJRUjgkMA1gHHh63rFw/Habits-(i)-(Community)?t=ZIPBAGYzdRufIN0g-0"><img alt="link projeto no figma" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F24E1E&logo=Figma&label=Designer&message=Figma&color=F24E1E"></a>
@@ -161,7 +161,7 @@ Instalar Dayjs na dependência de produção
 npm install dayjs
 ```
 
-### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss - Radix
+### FRONT-END | ViteJs - ReactJs - TypeScript - Tailwindcss - Radix - Axios
 
 Cria um projeto com ViteJs
 
@@ -238,6 +238,12 @@ Instalar CLSX para criar condicionais em className
 
 ```bash
 npm install clsx
+```
+
+Instalando biblioteca de Axios para comunicação Http
+
+```bash
+npm install axios
 ```
 
 ### MOBILE | React Native - Expo - TypeScript
