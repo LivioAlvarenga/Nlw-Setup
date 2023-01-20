@@ -397,6 +397,12 @@ Instalando biblioteca de Axios para comunicação Http
 npm install axios
 ```
 
+Instalar CLSX para criar condicionais em className
+
+```bash
+npm install clsx
+```
+
 ---
 
 &nbsp;
