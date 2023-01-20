@@ -46,10 +46,10 @@ Possui as funcionalidades de:
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **Gestão de Hábitos completa com NodeJs (Back-end), ReactJs (Front-end) e React-Native (Mobile)**                               |
-| :label: Tecnologias   | React-native, ReactJs, Expo, Prisma, Tailwindcss, NodeJs, JavaScript, TypeScript, HTML5, CSS3, SQLite3, Figma, Eslint, Prettier |
+| :placard: Vitrine.Dev |                                                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **Gestão de Hábitos completa com NodeJs (Back-end), ReactJs (Front-end) e React-Native (Mobile)**                                                  |
+| :label: Tecnologias   | React-native, ReactJs, Expo, Prisma, Tailwindcss, NativeWind, NodeJs, JavaScript, TypeScript, HTML5, CSS3, Axios, SQLite3, Figma, Eslint, Prettier |
 
 ---
 
@@ -246,7 +246,7 @@ Instalando biblioteca de Axios para comunicação Http
 npm install axios
 ```
 
-### MOBILE | React Native - Expo - TypeScript
+### MOBILE | React-Native - Expo - TypeScript - NativeWind - Axios
 
 Instalando expo-cli globalmente
 
