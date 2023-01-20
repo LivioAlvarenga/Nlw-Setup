@@ -391,6 +391,12 @@ Instalar Dayjs na dependência de produção
 npm install dayjs
 ```
 
+Instalando biblioteca de Axios para comunicação Http
+
+```bash
+npm install axios
+```
+
 ---
 
 &nbsp;
