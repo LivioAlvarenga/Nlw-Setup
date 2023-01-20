@@ -231,6 +231,7 @@ Instalar componentes do Radix
 ```bash
 npm install @radix-ui/react-dialog
 npm install @radix-ui/react-popover
+npm install @radix-ui/react-checkbox
 ```
 
 Instalar CLSX para criar condicionais em className
