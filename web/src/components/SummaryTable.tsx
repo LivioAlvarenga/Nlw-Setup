@@ -1,4 +1,7 @@
 import { faker } from "@faker-js/faker";
+import dayjs from "dayjs";
+import { useEffect, useState } from "react";
+import { api } from "../lib/axios";
 import generateDatesFromYearBeginning from "../utils/generate-dates-from-year-beginning";
 import HabitDay from "./HabitDay";
 
@@ -9,7 +12,22 @@ const summaryDates = generateDatesFromYearBeginning();
 const minimumSummaryDateSize = 18 * 7; // 18 weeks
 const amountOfDaysToFill = minimumSummaryDateSize - summaryDates.length;
 
+type Summary = {
+  id: string;
+  date: string;
+  amount: number;
+  completed: number;
+}[];
+
 export default function SummaryTable() {
+  const [summary, setSummary] = useState<Summary>([]);
+
+  useEffect(() => {
+    api.get("/summary").then((response) => {
+      setSummary(response.data);
+    });
+  }, []);
+
   return (
     <div className="flex w-full">
       <div className="grid grid-flow-row grid-rows-7 gap-3">
@@ -27,7 +45,18 @@ export default function SummaryTable() {
 
       <div className="grid grid-flow-col grid-rows-7 gap-3">
         {summaryDates.map((date) => {
-          return <HabitDay key={faker.datatype.uuid()} amount={5} completed={4} />;
+          const dayInSummary = summary.find((day) => {
+            return dayjs(date).isSame(day.date, "day");
+          });
+
+          return (
+            <HabitDay
+              key={faker.datatype.uuid()}
+              date={date}
+              amount={dayInSummary?.amount}
+              completed={dayInSummary?.completed}
+            />
+          );
         })}
 
         {amountOfDaysToFill > 0 &&
