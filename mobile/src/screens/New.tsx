@@ -1,10 +1,11 @@
 import { Feather } from "@expo/vector-icons";
 import { faker } from "@faker-js/faker";
 import { useState } from "react";
-import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Alert, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import colors from "tailwindcss/colors";
 import { BackButton } from "../components/BackButton";
 import { Checkbox } from "../components/Checkbox";
+import { api } from "../lib/axios";
 
 const availableWeekDays = [
   "Domingo",
@@ -19,11 +20,34 @@ const availableWeekDays = [
 export function New() {
   const [weekDays, setWeekDays] = useState<number[]>([]);
 
+  const [title, setTitle] = useState("");
+
   function handleToggleWeekDay(weekDayIndex: number) {
     if (weekDays.includes(weekDayIndex)) {
       setWeekDays((prevState) => prevState.filter((weekDay) => weekDay !== weekDayIndex));
     } else {
       setWeekDays((prevState) => [...prevState, weekDayIndex]);
+    }
+  }
+
+  async function handleCreateNewHabit() {
+    try {
+      if (!title.trim() || weekDays.length === 0) {
+        Alert.alert("Novo Hábito", "Informe o nome do hábito e a periodicidade");
+      }
+
+      await api.post("/habits", {
+        title,
+        weekDays,
+      });
+
+      setTitle("");
+      setWeekDays([]);
+
+      Alert.alert("Novo Hábito", "Hábito criado com sucesso!");
+    } catch (error) {
+      Alert.alert("Ops", "Não foi possível criar o novo hábito");
+      console.log(error);
     }
   }
 
@@ -44,6 +68,8 @@ export function New() {
         <TextInput
           placeholder="Exercícios, dormir bem, etc..."
           placeholderTextColor={colors.zinc[400]}
+          onChangeText={setTitle}
+          value={title}
           className="mt-3 h-12 rounded-lg border-2 border-zinc-800 bg-zinc-900 pl-4 text-white  focus:border-green-600 "
         />
 
@@ -62,6 +88,7 @@ export function New() {
 
         <TouchableOpacity
           activeOpacity={0.7}
+          onPress={handleCreateNewHabit}
           className="mt-6 h-14 w-full flex-row items-center justify-center rounded-lg bg-green-600"
         >
           <Feather name="check" size={20} color={colors.white} />
