@@ -51,7 +51,7 @@ export default function HabitDayPopover({ date, onCompletedChanged }: HabitListP
       completedHabits,
     });
 
-    onCompletedChanged(completedHabits.length)
+    onCompletedChanged(completedHabits.length);
   }
 
   const isDateInPast = dayjs(date).endOf("day").isBefore(new Date());
@@ -67,7 +67,7 @@ export default function HabitDayPopover({ date, onCompletedChanged }: HabitListP
             disabled={isDateInPast}
             className="group flex items-center gap-3"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg border-2 border-zinc-800 bg-zinc-900 group-data-[state=checked]:border-green-500 group-data-[state=checked]:bg-green-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg border-2 border-zinc-800 bg-zinc-900 transition-colors group-data-[state=checked]:border-green-500 group-data-[state=checked]:bg-green-500">
               <Checkbox.Indicator>
                 <Check size={20} className="text-white" />
               </Checkbox.Indicator>
