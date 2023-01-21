@@ -34,7 +34,7 @@ export default function HabitDay({
     <Popover.Root>
       <Popover.Trigger
         className={clsx(
-          "relative h-10 w-10 cursor-pointer rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-background",
+          "group relative h-10 w-10 cursor-pointer rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-background",
           {
             "border-zinc-800 bg-zinc-900 ": completedPercentage === 0,
             "border-blue-700 bg-blue-900 ":
@@ -52,7 +52,7 @@ export default function HabitDay({
         {" "}
         <span
           className={clsx("", {
-            "absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-yellow-600 text-xs font-bold text-background":
+            "absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-yellow-600 text-xs font-bold text-background group-focus:outline-none group-focus:ring-2 group-focus:ring-yellow-600 group-focus:ring-offset-2 group-focus:ring-offset-background":
               isCurrentDay,
           })}
         >
