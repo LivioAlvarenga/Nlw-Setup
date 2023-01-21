@@ -33,18 +33,21 @@ export default function HabitDay({
   return (
     <Popover.Root>
       <Popover.Trigger
-        className={clsx("relative h-10 w-10 cursor-pointer rounded-lg border-2", {
-          "border-zinc-800 bg-zinc-900 ": completedPercentage === 0,
-          "border-blue-700 bg-blue-900 ":
-            completedPercentage > 0 && completedPercentage < 20,
-          "border-blue-600 bg-blue-800 ":
-            completedPercentage >= 20 && completedPercentage < 40,
-          "border-blue-500 bg-blue-700 ":
-            completedPercentage >= 40 && completedPercentage < 60,
-          "border-blue-400 bg-blue-600 ":
-            completedPercentage >= 60 && completedPercentage < 80,
-          "border-blue-300 bg-blue-500 ": completedPercentage >= 80,
-        })}
+        className={clsx(
+          "relative h-10 w-10 cursor-pointer rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-background",
+          {
+            "border-zinc-800 bg-zinc-900 ": completedPercentage === 0,
+            "border-blue-700 bg-blue-900 ":
+              completedPercentage > 0 && completedPercentage < 20,
+            "border-blue-600 bg-blue-800 ":
+              completedPercentage >= 20 && completedPercentage < 40,
+            "border-blue-500 bg-blue-700 ":
+              completedPercentage >= 40 && completedPercentage < 60,
+            "border-blue-400 bg-blue-600 ":
+              completedPercentage >= 60 && completedPercentage < 80,
+            "border-blue-300 bg-blue-500 ": completedPercentage >= 80,
+          }
+        )}
       >
         {" "}
         <span
