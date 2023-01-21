@@ -33,7 +33,7 @@ export default function HabitDay({
   return (
     <Popover.Root>
       <Popover.Trigger
-        className={clsx("h-10 w-10 cursor-pointer rounded-lg border-2", {
+        className={clsx("relative h-10 w-10 cursor-pointer rounded-lg border-2", {
           "border-zinc-800 bg-zinc-900 ": completedPercentage === 0,
           "border-blue-700 bg-blue-900 ":
             completedPercentage > 0 && completedPercentage < 20,
@@ -44,9 +44,18 @@ export default function HabitDay({
           "border-blue-400 bg-blue-600 ":
             completedPercentage >= 60 && completedPercentage < 80,
           "border-blue-300 bg-blue-500 ": completedPercentage >= 80,
-          "border-3 border-yellow-500": isCurrentDay,
         })}
-      />
+      >
+        {" "}
+        <span
+          className={clsx("", {
+            "absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-yellow-600 text-xs font-bold text-background":
+              isCurrentDay,
+          })}
+        >
+          {isCurrentDay ? "H" : ""}
+        </span>
+      </Popover.Trigger>
 
       <Popover.Portal>
         <Popover.Content className="flex min-w-[320px] flex-col rounded-2xl bg-zinc-900 p-6">
