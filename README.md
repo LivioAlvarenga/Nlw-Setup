@@ -278,6 +278,15 @@ npx expo install react-native-screens react-native-safe-area-context
 npm install @react-navigation/native-stack
 ```
 
+Instalando react-native-reanimated para animações
+
+```bash
+npx expo install react-native-reanimated
+
+# vá em babel.config.js e atualize os plugins
+plugins: ["nativewind/babel", "react-native-reanimated/plugin"],
+```
+
 Instalando NativeWind no ambiente de produção (Tailwindcss em React-native)
 
 ```bash
