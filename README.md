@@ -492,6 +492,8 @@ npm run diagrama
 npx prisma db seed
 ```
 
+![diagrama db](https://raw.githubusercontent.com/LivioAlvarenga/Nlw-Setup/d38430aa86f096acba43d797c529d7c9fe8f932b/server/prisma/ERD.svg)
+
 ### Running the app mobile
 
 ```bash
