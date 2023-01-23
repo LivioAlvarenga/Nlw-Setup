@@ -62,6 +62,8 @@ Possui as funcionalidades de:
 
 ![Imagens-Mobile](https://github.com/LivioAlvarenga/Nlw-Setup/blob/master/files/Imagens-Mobile.png?raw=true)
 
+Projeto foi realizado no NLW-Setup da Rocketseat.
+
 &nbsp;
 
 <p align="center">
